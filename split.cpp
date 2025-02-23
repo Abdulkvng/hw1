@@ -19,20 +19,24 @@ void split(Node*& in, Node*& odds, Node*& evens)
   /* Add code here */
 // WRITE YOUR CODE HERE
 
-
+// base case - if list is empty
 if ( in == nullptr){
   return;}
-
+//saves next
   Node* nextnode = in->next;
-
+// if value at in is odd
 if (in -> value % 2 == 1){
+  // set next to points to odds list basically 
   in->next = odds;
+  // set to in
   odds = in;
 }
-else {
-  in->next = evens;
+else { in->next = evens;
   evens = in;}
-in = nextnode;
+  
+
+  // returns next to continue traversing trhough in list
+  in = nextnode;
 
 split(in, odds, evens);}
 
