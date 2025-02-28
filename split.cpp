@@ -29,11 +29,9 @@ if (in -> value % 2 == 1){
   // set next to points to odds list basically 
   in->next = odds;
   // set to in
-  odds = in;
-}
+  odds = in;}
 else { in->next = evens;
   evens = in;}
-  
 
   // returns next to continue traversing trhough in list
   in = nextnode;

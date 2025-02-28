@@ -3,10 +3,8 @@
 
 
 struct Node 
-{
-  int value;
+{int value;
   Node* next;
-
   /**
    * Initializing constructor
    */
@@ -14,9 +12,7 @@ struct Node
   {
     value = v;
     next = n;
-  }
-};
-
+  }};
 void split(Node*& in, Node*& odds, Node*& evens);
 
 #endif
